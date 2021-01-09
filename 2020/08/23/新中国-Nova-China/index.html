@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="For the times they are a-changing.">
+  <meta name="author" content="TsingChuan">
+  <meta name="keywords" content="">
+  <title>Nova China - TsingChuan&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"#"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":"c91ad77fb5072b82c30b4e1da77d4c3b","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>TsingChuan</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Nova China">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-08-23 05:04" pubdate>
+        2020年8月23日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      5.8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      39
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Nova China</h1>
+            
+            <div class="markdown-body">
+              <p>　　那年的夏天似乎已渐渐远去，但每个人都深深地记着它。在清王朝的猛烈攻势下，共和国的第一批领导人自深山中走出，以迅雷不及掩耳之势迅速接管了明王朝的残部。而整编东路军军长李定国、北路军军长刘文秀一齐发动对清王朝的第一次北伐 战果可以说是显著的，在为期两年又3月又5天的行动中，一共歼灭清军4.6万余人，复土180余万平方公里，北路军一度光复西安至兰州一线。在1659年3月12日，经过了四年的艰辛建设，国家正式完成由明王朝至共和国的转变，整编军也正式改编为北伐军，分为5个平原师，8个机动旅和32个战斗纵队。我们也完成了巨大的科技进步，成功的研制出2000吨级高速铁甲战列舰，航速超过当时最快帆船3倍，215mm舰炮更是起到了至关重要的作用。同日开始的第二次北伐中，得益于江南复国会的行动和“谷雨”号战列舰的火力，10日之内便光复南京。经过了将士们9个月的奋战，我们成功地从长江上游打到了黄河流域，震惊了整个东亚。1662年黄淮治理工程的完成让我们能够充分地利用肥沃土地的产能，并于1665年开始了第三次北伐。</p>
+<p>　　但是第三次北伐在某种意义上可以说是失败的。在全国大会上大汉族主义者窃取了领导地位，誓要将满族人杀尽杀绝，并将这危险的思想灌输到了前线军队之中，使得东北战线上多了20万无辜的冤魂，剩下的不到5万满族人在安龙府留守人员的求情下才得以保住性命，被解除武器后被赶出了黑龙江，期间死伤不计其数。</p>
+<p>　　大汉族主义者的行动在心灵上深深地刺伤了留在安龙府的留守人员，在1669年的9月10日，部分留守人员联合了起来策划了一场政变，但在前往国会大厅的路上遭到了掌权者的镇压，由于安龙府的对东北事变的同情人员不在少数，于是人们纷纷出门游行抗议。但随即迎面而来的是硝烟与血液。在这场失败的政变中，一共有5116人惨死，其中包括13名留守人员。这彻底激怒了分散在全国各地的留守人员与外派人员，连同一些同样对那场惨无人道的屠杀而愧疚的人们，一起在全国23个城市掀起了抗议的狂潮，掌权者不得不被迫下台，并给予各省更大的自主权利。</p>
+<p>　　但换上台的却是一帮为了资本不计一切代价的团体。在北方以及湖广地区的中央直辖省，远超历史上任何时候的压迫正在发生。强买强卖、高利贷、血肉工厂、民族歧视、新闻管制、司法滥用……刚刚经历过残酷的抗清战争的人们不得不再忍受一次人祸。1672年6月21日，全国各地纷纷举起了解放人民的旗帜，左翼社团们团结在一起，第一月便解放了西藏、西康、四川、贵州、江苏南部、浙江等地区，但随即而来的是政府军无限制的围剿。西南红军不得不把80%的兵力从解放云南的前线调回秦岭-汉江-巫峡一线死守。江南红军更是遭到的地主阶级和资产阶级的联合绞杀，刚集结起的11万红军便被3倍兵力优势的政府军分割包围，只能放弃刚解放的大片土地，退回浙江北部沿海。</p>
+<p>　　而西南红军方面，由于未能料到敌军千里迂回直奔临时首都安龙府，在黔南遭遇重创，死伤6000多人；接着又在离安龙府不到50公里的南盘江上惨败，南方内河舰队就此覆灭。红军领导高层并没有按照参谋部的提议炸毁南盘江大坝，转而撤出了临时首都。在乌蒙山上，西南红军与政府军展开了围剿与反围剿作战，成功拖住了政府军迅猛的攻势，也为后方进行工业重建做出了巨大的贡献。在这期间，西南红军成功赶上了政府军的科技，第一次克服了地球重力奔向蓝天；成功制造了通用型柴油发动机AY001-C并大量装备于机动部队——然而等到出现反攻机会时，已是1675年10月9日了。</p>
+<p>　　而江南红军则遭到了毁灭性的打击。政府军集结了3个军的兵力攻打江南红军的最后一处根据地，江南红军也进行了顽强的抵抗，以3000人的兵力抵抗住政府军3个全骡马化军的进攻7个月之久。但最终江南红军的最后一块根据地也已陷落，城中除少数妇孺以外几无一人生还。仅存的指挥部和192名士气低落的红军战士逃向海边。无助地在海边峡湾中流浪了近1个月，江南红军领导人张岱终于精神崩溃。在一个清冷的清晨，重组第三排的一名普通士兵发现他倒在海边沙滩上，手中还握着留有余温的60式手枪。</p>
+<p>　　失去了最高领导人的江南红军余部立刻讨论了接下来的方向。是编制成小规模部队继续在舟山打游击，还是转进到南方仍然可能留有革命火种的地区，又或是……抛弃一切理想？</p>
+<p>　　正当各派激烈辩论不休时，几名曾经经历过3次北伐的老兵默默地安葬了这位曾带领他们从烈火中的江南打破清军统治的指挥官。忽然耳畔传来一阵汽笛声，老兵觉得自己是时日无多了，仿佛回到了记忆中的江南解放那一天。“谷雨”号战列巡洋舰乘风破浪，冲过清军严防死守的水上防线，用汽笛与炮声引导江南义军攻打南京城……老兵就曾是他们中的一员。也许这辈子真的就这样玩儿完了吧……</p>
+<p>　　但越来越大的汽笛声撕裂了他的回忆。茫然地睁开眼，眼前正是仅存的一艘柴油高速巡洋舰“蔚蓝”号，桅杆上飘扬的也是在与红军本部失联前约定的红白相间旗帜。猛然地他意识到，自己还没理由放弃。</p>
+<p>　　就这样江南红军最后的191人乘上“蔚蓝”号远洋航行到了第三革命根据地：滨海省。在短短的5年建省史里，中央政府一直没有建立完整的统治，也使得这里成为了左派们的第二个故乡。滨海省的左派领导人们在得知西南和江南地区的起义以后就立刻采取了行动，秘密地潜入了滨海省政府，悄无声息地控制了整个滨海省军政大权。得益于大理共和国（第三阶段）的制度问题，左派领导人们成功地在大理共和国政府眼皮底下控制了第三舰队和滨海方面军。凭借着过人的胆量和小心翼翼的行动，滨海省已然成为了一个称得上是当时最成功的左派政权。得知江南红军反击失败的消息后，滨海省委立刻派遣第三舰队前去支援。当然，滨海省委也考虑到了正式翻脸的危险性，东北驻扎着30万的东北集团军，而滨海方面军仅仅只有5万人；第三舰队真正称得上有强大战斗力的只有三艘：“蔚蓝”号柴油高速巡洋舰、“摇光”号蒸汽战列舰、“开阳“号高压蒸汽高速战列舰。但是作为唯一一个活得还算滋润的左派政权，不能看着有着同样理想的部队覆灭。</p>
+<p>　　于是在1673年8月13日，大理共和国那个伟大的建立之日的第21周年之际，疲惫的江南红军余部终于来到了滨海省省会蔚州市。未经历过风雨动荡的滨海省红色政权从他们那里得到了宝贵的建军经验和政治斗争素质。在1个月的激烈讨论中，滨海省终于下定决心，正式向全世界（仅限拥有电台的政权）宣布独立并与政府军开战。</p>
+<p>　　滨海方面军接受了改革：改称滨海红军；全军5万人分为2个骡马化步兵师（共2.2万人）、4个机动步兵旅（共2万人）、2个炮兵旅（共0.4万人）、1个战略支援部队（共0.3万人）和1个骑兵团（0.1万人）。基础战斗单位为营级部队，依靠高度的机动性在长白山和滨海山中来回穿梭，以歼灭敌军有生力量为目标，执行“政治建军”的原则。</p>
+<p>　　而第三舰队的主要目标是将敌军封锁在对马海峡以西（此时朝鲜局势一片混乱，党争愈演愈烈，无限可分），并防止敌军从冰海偷袭。</p>
+<p>　　直到1673年11月，政府军似乎才反应过来东北出了大事。匆匆维持住对西南红军的微弱优势之后急忙调遣25万军队北上平定。西南红军也得到了微弱的喘息机会。</p>
+<p>　　滨海红军也迅速采取行动，对东北民众的宣传已经持续了3个月之久，拉拢了一大批支持滨海红军的力量。随即滨海红军跨过乌苏里江，翻越长白山脉，联合东北人民向铁路线发起了“断线”运动，赶在敌军大部队到来之前破坏了1620公里的铁路公路线。期间也与东北集团军发起了几起小规模冲突取得了3胜1负的成绩，为将来的东北会战积攒了经验。</p>
+<p>　　这年的冬天极其寒冷，而且由于过度的降水量，连续半个月都在风雪交加中度过。由于东北的交通网已经被大规模截断，已经无法通行，整个东北地区坑坑洼洼，最快的政府军也只能做到5km/h的最高速度。</p>
+<p>　　即使早就做足了准备，把机动步兵旅的装备加上了雪橇，还给少量部队配上了雪地车，却并没有比政府军多占多少优势。大雪封山，军队在1米多深的积雪中寸步难行。与政府军的第一次正面交战发生在松花江旁的老林里，在林中凭借雪橇的高机动性穿梭的第3机动步兵旅遇上了政府军的第5混编师第2步兵旅，双方随即进入激烈的交战中。由于极高的机动性（相对于敌军而言），第3机动步兵旅一开始占据了极大的优势。在第一天的战斗中，取得了歼敌500余人、自身伤亡30余人的好成绩。但是政府军在夜间进行了强力的反攻，凭借着新开发的早期自动步枪，火力上完全压制了仅配有1655式改后装步枪的第3机动步兵旅。整个旅部被击退，只得退入山林中进行游击作战。至此，东北会战正式打响。</p>
+<p>　　在为期16个月的第一阶段中，滨海红军与政府军在陆上一共进行了152次大大小小的战斗，达到总兵力6000人以上的大战共有60次，其中滨海红军取得完全胜利有11次。在第一阶段中，滨海红军的战略是在深山与森林间进行游击作战。滨海红军在第一阶段中一度伤亡比达到了1：0.3，主要是由于战斗经验的缺乏、政府军的装备优势以及气候的影响。一共有16000人在第一阶段与世长辞。</p>
+<p>　　海军方面却是取得了意料之外的大捷。对马海峡成为了海上坚不可摧的长城，海军也多次主动出击，成功击沉敌方1艘“星辰”级高速巡洋舰、3艘“长江”级铁甲护卫舰，俘获1艘“光荣”级铁甲战列舰。保障了东北海域安全，壮大了海军力量。</p>
+<p>　　第二阶段于1675年5月2日开始。滨海红军开始拉拢曾被政府军驱逐至黑龙江以北的满洲余部，为他们带来了全新的知识体系。经过怀疑、不解、沉默，终于欣然同意，与滨海红军一起建立了人民解放阵线。滨海红军大部负责拖住政府军凌厉的攻势，其余投入到对外东北的现代化改造（包括基础设施、军队、教育以及政治体系方面）。经过了9个月的全力改造，将外东北地区建立成为了初步具有自给能力的现代化地区。1675年底滨海红军就开始了反攻，曾经有着巨大民族裂痕的人民们站到了一起，并肩抗击政府军的残暴统治。</p>
+<p>　　东北的泥潭使得政府军深陷其中。其对人民的压榨也达到了顶峰。税收达到了40%的极高峰，用于前线的后勤补给无一不是从各地的物资中克扣而来的。政府军也对民间舆论进行了严格的管控，各地人民几乎不知道正在与谁交战，“沦陷区”的生活又是怎样的。偶有几个了解的，一在公共场合说出来，第二天就消失得无影无踪。</p>
+<p>　　但是东北会战的局势进一步升级，政府军也无暇顾及舆论的严格管控。起初人们还是无人敢向“沦陷区”迈出一步，直到一名纪实作家偶然间到了前线，在一次反围剿行动中被西南红军俘虏，才真正了解到了这个几乎与世隔绝的光明天地。</p>
+<p>　　即使处在旷日持久的战争当中，西南红军仍然维护着还不错的生活水平。只是在安龙府刚刚沦陷时出现了一次不小的经济动荡，但很快便被化解。比起“外面”万物腾贵、连买得到除了生活必需品之外的东西都是空谈的现象，这里物资充裕到外界底层人民几乎无法想象的地步（事实上这个局面刚稳定不到6个月，西南地区的洪峰过去之后才腾出手来重建，并且由于政府军兵力的调动使得冲突稍平，又成功拉拢缅甸方面向国外进口如橡胶等原材料，才让人民生活稳定下来。不过外界民众惨得多）。西南红军认为这是一个不可多得的好机会，便在这位作家游历西南各省后遣送回西北地区的政治中心——西安。</p>
+<p>　　这位作家立刻私印了自己在西南游历的笔记。2个月后，这本小册子传遍了西安城的各个角落，每个人都在为西南那个抵抗了3年多的政权而叹息和愤慨。政府军内务局彻底地在西北失去了控制，舆论管控一夜间似乎消失了。内务局意识到这是他们最后一次组织政府免于崩溃的机会了，尽管还有70余万世界数一数二的现代化军队待命，还有100余万治安力量进行管制，整片国土似乎风平浪静。但内务局，这群最深刻的了解这个国家的人，也已对这暗潮涌动的局势失去了信心，甚至有人已经决意投靠西南红军。这个在政府军看来最不可能分裂的部门在这金秋时节的西安城率先崩溃。</p>
+<p>　　仍有不少的人选择继续忠于政府。第二天的黎明来临前，两派早已控制了自己的战斗力量。亲红派胁迫了西安武装力量部部长，调动了城内所有设施准备守城。政府军派则与城外的驻军联系，星夜调动6万机动力量攻城。</p>
+<p>　　得到了西安消息的西南红军也是震惊无比。西南红军本只想着让西安民众对自己的好感度增强一些，没想到率先打起来的竟然是内讧的内务部。正在南方筹备反攻的3个集团军立刻抽调2个北上支援起义的军队，出子午关直奔西安城进行接应。</p>
+<p>　　西安战役在1675年10月2日凌晨5点21分打响。布置在城外4公里的YP-69火炮阵地对西安城发起了炮火进攻。在火炮掩护下的政府军突击队沿着战壕向西安城进军。花费近半个小时安稳城内局势后，立刻拿出存量不多的火箭弹压制越来越近的攻势。但这并没有起到多大效果，搭乘了突击车的政府军工兵已在城墙下准备爆破。轰的一声，惊天动地。</p>
+<p>　　起义军不得不转入优势极差的巷战当中。2万政府军率先入城，迎接他们的是守城民众的开水与砖石。恼羞成怒的军队在华夏大地上第一次将毒气弹用于自己的同胞，入城道路上伏尸上千。起义军带着为数不多的补给退入西安的一片废墟之中，在钢筋水泥、砖石泥瓦中筑起隐藏的工事。也许哪一个破碎的下水管道中就会闪出一枚7.62，夺去几乎毁灭这座城市的政府军士兵的性命。</p>
+<p>　　巷战一直持续了3天。废墟中连续作战起义军士兵们早已精疲力竭，子弹也早已耗尽。食物更是未出现过，已经步入毁灭的边缘。最后的300余人分散在城市废墟的各个角落，各自筹划着最后一次注定以生命换取的进攻。正悲哀地走出埋藏在厚重的废墟之下的根据地，也许这就是起义军的最后一次赎罪吧。但耳畔忽地传来嘹亮的冲锋号声，精神也不由得稍稍振奋起来。向班长要来了望远镜，向着南方远眺，一杆红旗正飘动在秦岭之下。</p>
+<p>　　第3集团军第2军第2摩托化步兵旅是第一个到达西安前线的西南红军志愿军。尽管成为了世界第一个完成了摩托化的旅级军队，行进速度大幅提高，但秦岭突发的山体滑坡还是让他们多绕了1天路程。载着高速12.2机枪的装甲车一下就肃清了正准备收拾城内残余起义军的政府军。在与起义军残部沟通之后，每个士兵都为不能及时赶往血河遍地的西安战场而自责，并强烈要求立刻出秦岭光复西北，再一鼓作气打下北京。</p>
+<p>　　而那个游历西南的作家，被人发现早已牺牲在守卫城门的第一线，面目全非。</p>
+<p>　　总部当然拒绝了这么激进的建议，但将主用兵方向调往西北绝对不会是错误的选择。于是在稳定了已是一片荒芜的西安城局势后（事实上整个西安城除了军队以外只有不到千人了），向西北地区增援了7个旅。</p>
+<p>　　接下来由于东北会战第二阶段的结束，政府军被赶出辽河以南，但仍然保有沈阳以南的辽东半岛。由于后方俄罗斯向东北后方的侵略，东北会战进入抗击外国殖民阶段（其实是一个一个拔掉殖民点的过程……影响进度的因素只有行军速度和目标范围）。在1676年3月至1677年2月期间，共摧毁殖民点61个，范围从冰海（鄂霍茨克海）一直到鄂毕河流域，因气候减员比因战斗减员还要多得多。</p>
+<p>　　1677年6月，西南红军控制了黄河以西的西北地区。唯一的大规模战斗发生在银川，歼敌1600余人，自身伤亡199人。1677年10月，西北红军渡过黄河，向山西发动进攻。同时在南线发起了全面反击，直到1678年11月底，西南红军已成功控制长江–汉江–黄河–太行山以内的广大地区。滨海红军也配合进行进攻，在南北两面夹击之下，1679年3月2日，北京解放，标志着大理共和国时期的结束。</p>
+<p>　　由于连续不断的苦难，使得新生的中国对待任何问题都极其谨慎，对待国家未来的和平与繁荣愿意付出一切努力。同样，第一代Nova China领导人为他们留下了宝贵的遗产：国际主义、自由意志共产主义、无政府共产主义……而出于对其他深陷于苦难中的各国人民，Nova China也愿意伸出一切援手。于是西伯利亚人民共和国、朝鲜人民共和国、越南革命阵线……相继在世界各处成立。</p>
+<p>　　但任何国家都逃不出腐化的怪圈。自1680年正式成立Nova China以来，已经有30年了。国家还在欣欣向荣，但暗部的危机却如同梦魇般接踵而至。我们绝不希望黑暗的那段时光再来一遍。已经有人在从Nova China分离出的远东人民共和国里开始实践自己的梦想，建造一个人人富足、永无争斗的国家。也许我们的未来，</p>
+<p>　　“会更加美好。“</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%A4%A7%E7%90%86%E5%85%B1%E5%92%8C%E5%9B%BD/">大理共和国</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Republic-of-Dali/">Republic of Dali</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%88%91%E4%BB%AC%E7%9A%84%E6%9C%AA%E6%9D%A5/">我们的未来</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Our-Future/">Our Future</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/08/23/%E6%96%B0%E4%B8%AD%E5%9B%BD-Nova-China-%E6%94%BF%E5%85%9A/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Nova-China-政党</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/07/23/%E7%AE%97%E6%98%AF%E5%A4%B1%E8%B4%A5%E4%BA%86%E5%90%A7/">
+                        <span class="hidden-mobile">算是失败了吧</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "4mca7CEPgz6yrSWtDdtrtPOF-MdYXbMMI",
+          app_key: "mqIcjRoqMGtQlXMkchTgnyr0",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: true,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c91ad77fb5072b82c30b4e1da77d4c3b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>

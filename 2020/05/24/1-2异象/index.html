@@ -1,0 +1,641 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="For the times they are a-changing.">
+  <meta name="author" content="TsingChuan">
+  <meta name="keywords" content="">
+  <title>1.2异象 - TsingChuan&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"#"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":"c91ad77fb5072b82c30b4e1da77d4c3b","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>TsingChuan</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://cdn.jsdelivr.net/gh/forevercontinent/img/%E5%BC%82%E8%B1%A11.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="1.2异象">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-05-24 14:27" pubdate>
+        2020年5月24日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      19
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">1.2异象</h1>
+            
+            <div class="markdown-body">
+              <p>　　4月底天气突然变得热起来。从前几天不到20摄氏度突增至30多度，很多同学都受不了。天已经很早就亮了，现在毒辣的太阳正试着透过任何一个空隙来炙烤他们。</p>
+<p>　　熊廷川很不满。怎么上周才降温这周就能热死人了呢？正在第一节课上呢，周末又没补上觉，搞得现在昏昏欲睡。上周五才和老师大吵一架，这周就用沉默来回应吧。她用手撑着脑袋，无精打采地望着大屏幕。而老师竟也不提问她，这让她很怀疑老师已跟自己达成了某种默契，甚至是吵架方面的。熊廷川很不安。</p>
+<p>　　而唐竺则偷偷带进了一部手机。校门口已经排查得特别严格了，她还是利用了一部分死角来骗过了金属探测仪从而带进来了。现在她把手机藏在抽屉中的书本间，时不时拿手下意识地触碰，以获得“这时刻都在”的安全感。那课却没怎么听的进去。这学期的英语突然变难，听说要学过去进行时、现在完成时，还有各种乱七八糟的时态和词汇，令人头大。</p>
+<p>　　欧芸和童心则在专心地听课。欧芸是希望用认真听课来弥补自己的短板，而童心则是不希望这门语言学科拖自己后腿。</p>
+<p>　　明明是亚热带季风气候，现在却也没到夏季啊，怎么就如此的热了呢？熊廷川嘟囔着。也许是四川盆地不配拥有春天吧……又或者是网课上得太久了没注意到？熊廷川赶紧回过神来毕竟她要反对的是老师本人，而不是她所上的课。</p>
+<p>　　天还是那一样的天，人却早已不是同样的人了。熊廷川叹息了一声，没有人注意到。环顾了一下四周的同学们。</p>
+<hr>
+<p>　　最终唐竺还是忍不住打开了。之前熊廷川偷偷教给她要把亮度调到最低，静音，并且不要经常性地看抽屉。这些办法她都用上了，也确实没有被发现。但就是熊廷川教她的14键双拼盲打始终没能学会，比较可惜。这样也干不了什么，只能和同在学校的另一个朋友聊天。</p>
+<p>　　熊廷川不用说看，想都不用想就知道唐竺在课堂上玩手机了。她也搞不清着是否会影响学业。但倏然地，她总感觉接下来会发生什么大事，略微紧张了起来。</p>
+<p>　　眼前突然一黑，熊廷川知道那件大事突然之间来了。她试着活动一下手指，能感觉到，说明是视觉出了问题。再眨一次，视线又恢复了正常。这种情况在她身上出现过了好几次，去眼科并没有查到问题所在。现在看来，之前的那几次或许真的是纯粹的眼部问题，而这次明显不是。因为——</p>
+<p><img src="https://cdn.jsdelivr.net/gh/forevercontinent/img/%E5%BC%82%E8%B1%A11.jpg" srcset="/img/loading.gif" alt="穿越了？"></p>
+<p>　　熊廷川闻到了一股特属于无人改造过或影响过的纯粹大自然的味道，与城市中干燥而蕴含着沥青味的水泥味道截然不同。这时她看向窗外，乍看下去似乎与平常并没有什么不同，但仔细再看：现在明显已近黄昏。熊廷川倒吸一口气，怀疑自己睡过头了，再回头看看老师，如常一样在讲课，似乎并没有什么不同。</p>
+<p>　　唐竺正聊得起劲儿呢，唠日常也唠烦了，周围的光线忽然黯淡下来。下意识地认为老师过来了，立马按下锁屏键，推回抽屉，弯腰捡笔三步流。然而老师并不在自己身边，也并没有在注意自己；但她突然注意到了环境的变化——原本上午清亮的光线忽而变得昏黄，并且——</p>
+<p>　　正对着窗户映照过来。</p>
+<p>　　唐竺吓得当即低吼了一声，好在没人听到。我DNMD，这是怎么了？太阳从西边出来了？或者又出什么大问题了？环顾四周，好像没有人注意到，都还在专心听课呢。周围上课的吵闹声音也忽地沉寂下来。除了正在播放的听力录音以外，一片沉寂。趁老师还没看向她的方向，再次偷偷拿出手机，向同学求助。</p>
+<blockquote>
+<p>“我们这里出大问题！”</p>
+</blockquote>
+<p>　　她用全拼打着。对方也很快回应：</p>
+<blockquote>
+<p>“出什么事了？”</p>
+</blockquote>
+<blockquote>
+<p>“你们没发现吗？”</p>
+</blockquote>
+<blockquote>
+<p>“发现什么？”</p>
+</blockquote>
+<blockquote>
+<p>“太阳从西边出来了！”</p>
+</blockquote>
+<blockquote>
+<p>“真的假的，别骗我哦😁”</p>
+</blockquote>
+<blockquote>
+<p>“鬼才骗你。能听到我们班在上课吗？”</p>
+</blockquote>
+<blockquote>
+<p>“能啊，好像在听听力。”</p>
+</blockquote>
+<blockquote>
+<p>“但我们这里听不见你们在干什么。”</p>
+</blockquote>
+<blockquote>
+<p>“？？？怎么回事小老弟？ 【关爱智障的眼神.jpg】”</p>
+</blockquote>
+<blockquote>
+<p>“出大问题！！！”</p>
+</blockquote>
+<p>　　正当听力即将放完时，熊廷川打断了老师想要评讲的前摇，站起来大喊道：“老师，我们这里出大事了！”</p>
+<hr>
+<p>　　童心和欧芸并没有留意到环境的细微变化，正在朝着PPT订正答案呢。童心正在心里感慨这次听力忒难忒难以至于什么什么的，欧芸则面对着一堆ABCDE愁眉苦脸焦头烂额，这对她来说确实是有点过难了。当听到熊廷川的大喊时，她们俩都突然手足无措。这倒是她们第一次这么清晰地收到了她的警报（上次是一次微弱的地震）。这个女孩的直觉向来都不会错。童心迟疑了一秒，手中正飞动的笔轻轻倒下，发出轻轻的“噔”的一声。</p>
+<p>　　“老师，我想提醒一下，”熊廷川不再管之前和老师的争吵与隔阂，直视着她大声道，“这节课是上午第一节课，对吧？”停顿了三秒，没人回应，“但现在看看窗外。”</p>
+<p>　　全班人都带着一种奇怪的眼光，看着这位突然打断老师讲课的同学。又转头看了看另一侧的窗外，停滞片刻，都惊声尖叫起来。“我们这是在哪儿啊？！”“太阳从西边出来了！？”“黄昏了！”</p>
+<p>　　熊廷川对正一脸惊愕的老师说：“现在，请班上前五一起跟我走们。学校外面好像发生什么大事了。这不是演戏！”她转过身去，面朝着全班同学吼着，“安静！安静！！班上前五跟我一起去前门了解情况！剩下的组长管好组员，不要出教室门！”</p>
+<p>　　其实她自己比其他人甚至更慌。突然这么大的变数，她自己也只是勉强镇定下来，冷静思考了一下。这个感觉太像其他的穿越小说里写的那样了，但是一点其他的感觉都没有，还没感到一点类似“虫洞”之类的感觉就突然被扔在这个荒山野岭上——应该是吧，从教室正对着的那一片片茂盛的植物来看，周围应该是还没开发完成的山谷，没有什么人影。心跳突然加速到了180+。</p>
+<p>　　“童心、斌锐、萱慧、纪逸！跟我走！”没等老师作出表态，她就先对全班同学下令了。刚才她所喊道的在她眼里都是心理素质很高的，即使外面天崩地裂都至少能沉住一口气来思考而不是如丧考妣似的疯了。但还没待他们走出教室，就听见前门方向震天动地的“轰”的一声，楼板都在震动。</p>
+<p>　　她认定是前门那里发生了事故。绕过挡住视野的办公楼，前面骤然出现了末日般的场景。其他的离学校较远的建筑物全部消失不见，而离学校近的——其中之一——靠着前门修的一幢楼，刚才就貌似因“穿越”所致的地质条件变化而垮塌。童心稍稍有些颤抖着说：“我们是……去救人吗？”“你看看，旁边教室有哪怕一个人吗？还用说？”“嗯，还是先过去一下吧，万一有人呢。”纪逸劝了一下。</p>
+<p>　　还是都匆匆忙忙地下了楼，这才发现楼下有另一个班。个子比较矮，还都戴着红领巾，是小学生无疑。但这里突然来了一个班的小学生，非常可疑。他们的老师看起来不在这里，应该没有穿过来。而这些小学生她一个也不认识，于是带有一点警惕性地说道：“哪个班的？”</p>
+<p>　　领队的那个比熊廷川稍稍矮一点的女生怯生生地回答道：“XX市XX区第一实验小学六年级2班……”</p>
+<p>　　原来是XX市的啊……这么远也能穿过来，确实是匪夷所思。“你们一共多少人？带5个人出来，先去看看刚才塌的那里。”这些小学生可能怕生，等了十几秒都没有人主动站出来。倒是萱慧这里先数出来了，“49个，”萱慧对着廷川小声地说，“但是既然是XX市的实验小学，那成绩也应该不算差，随便选几个人出来帮我们便是。话说回来，你要干什么？”</p>
+<p>　　廷川这里已经在挑人了。“那边肯定是没有人的……就是去那里面抢救点东西，不管什么道义了，先救活我们自己再说。”萱慧并没有完全听懂她的话，先带着剩下四个人先行跑向前门。廷川　　挑完人后，对那个领队说：“让其他人原地坐下，非紧急事不要乱走！现在很危险，待会儿会有老师来通知你们的。”然后带着挑出来的五个人加速奔向校门。</p>
+<p>　　校门的左半边已垮了一半，童心那四人正站在边上不知所措。等到廷川一行人赶来后，萱慧急匆匆地过来，“现在干什么？”</p>
+<p>　　“搬，各种有用的东西都搬。拿不起的可以留着，多一件儿就是多一份生存的希望。”四人都没听明白，刚拉来的5位六年级学生更是听得云里雾里的。还没等他们消化完这句话，熊廷川就已经先冲上了废墟，也不管有钢筋、坑洞什么的，直接就跳了上去。斌锐见了急喊：“喂，别伤着了！”灰白色的混凝土森林中传来稍弱的声音，“不管！都进来救东西先~！”留在外面的9个人面面相觑，也都进去了。</p>
+<p>　　教室里突然沉寂了下来。众人都给刚才的一连串事件给打懵了。倒是唐竺继续跟网友聊着：</p>
+<blockquote>
+<p>“喂，我们这里楼塌了！”</p>
+</blockquote>
+<blockquote>
+<p>“什么？楼塌了？”</p>
+</blockquote>
+<blockquote>
+<p>“你们那里没有吗？”</p>
+</blockquote>
+<blockquote>
+<p>“没啊……哎，怎么听不见你们班声音了？”</p>
+</blockquote>
+<blockquote>
+<p>“大概……可能……貌似是穿越了吧……”</p>
+</blockquote>
+<blockquote>
+<p>“啥，穿越？那是那一年啊【战术后仰】。”</p>
+</blockquote>
+<blockquote>
+<p>“我不知道……”</p>
+</blockquote>
+<blockquote>
+<p>“哎……等哈，你们班——没啦？”</p>
+</blockquote>
+<blockquote>
+<p>“在你们那里——大概是没了吧。”</p>
+</blockquote>
+<blockquote>
+<p>“Woc，报警”</p>
+</blockquote>
+<p>　　正当唐竺想继续发时，最新的消息前却赫然挂着一个红色的感叹号。唐竺突然大叹一口气——使得全班同学都看向自己这边。与旧世界的最后一点联系就这样也被打断了。</p>
+<p>　　紧接着，教室里的多媒体平台也突然断电，灯闪了一下又重新恢复——这应该是备用电源的功劳。</p>
+<p>　　“被遗弃在这世界上咯……”唐竺轻声对自己说道。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%B0%8F%E8%AF%B4/">小说</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%A4%A7%E7%90%86%E5%85%B1%E5%92%8C%E5%9B%BD/">大理共和国</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Republic-of-Dali/">Republic of Dali</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/05/30/France/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Francé</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/05/23/%E5%B0%86%E6%9D%A5%E8%A6%81%E7%94%A8%E5%88%B0%E7%9A%84%E5%9C%B0%E5%9B%BE/">
+                        <span class="hidden-mobile">将来要用到的地图</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "4mca7CEPgz6yrSWtDdtrtPOF-MdYXbMMI",
+          app_key: "mqIcjRoqMGtQlXMkchTgnyr0",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: true,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c91ad77fb5072b82c30b4e1da77d4c3b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>

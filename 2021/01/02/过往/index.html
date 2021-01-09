@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="For the times they are a-changing.">
+  <meta name="author" content="TsingChuan">
+  <meta name="keywords" content="">
+  <title>过往 - TsingChuan&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"#"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":"c91ad77fb5072b82c30b4e1da77d4c3b","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>TsingChuan</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="过往">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-01-02 17:25" pubdate>
+        2021年1月2日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      5.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      37
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">过往</h1>
+            
+            <div class="markdown-body">
+              <p>　　又是8月13日。也许不是什么重要的日子，但藏在脑海中的记忆驱使着自己想要去那个地方。</p>
+<p>　　一次又一次，突然发现自己的行为与思想又一次走调。随着每日一次的阿司匹林，痛楚稍稍缓解了些。吃力地用双手撑起沉重的躯体，靠在床头又一遍进行起了每日一次的沉思。往常只是逼着自己暂时忘却——那无法舍弃的混沌的往事。这次却是莫名其妙油然而生出一股强烈的情感。</p>
+<p>　　明明是盛夏，四肢却不由自主地发颤。有些冷。扯进了看看就觉得很厚重的棉被。化纤的面料十几年已变得黄斑，不可否认的是保暖性能仍然很好。温馨的房间不仅在记忆中，也在眼所见的地方慢慢泛黄。仿佛万物都将老去似的。侧身去取日常摆在床头的发皱的合影。那是唯一一次全部穿越者——不算汉中那个和死在青海那个的话——和自己——又自我中心论了——的合影。很怕出现在镜头前，仿佛每一次快门，都能让自己感受到岁月的沧桑。这话说着可不对。26载春秋，自己不见一丝皱纹，连身高也不见长，一直都是当年那个懵懂小女孩的模样。甚至心智也没多少变化。不知不觉视线模糊了起来。</p>
+<p>　　连忙抽几张纸拭去。却发现几张单薄的纸巾根本不够用。一遍遍地重复着“别哭别哭”，只是感到有什么滚烫的液体打在了胸前。是什么让自己突然敏感起来呢。抽泣着在繁星中摸索，也找不到哪怕一颗黯淡的光。隐约觉得摔落进无限深的黑暗中，长久不听见落地的那声巨响。神奇地止住了抽噎。</p>
+<p>　　那我要去哪儿。还能去哪。窗外刺眼的深蓝。在这片新生的土地上，到处都是吸引人的新鲜景致。但对自己来说又有何兴致呢。昔人已远去，何留己独行。恨，恨那些不带着她一起被坑杀在东北的，恨那些不带她在炮火之中撕成碎片的武昌士兵，恨那些安龙守军不带她一起葬身鱼腹。甚至还恨那个刺客手不拿稳，应该一枪打穿心脏而不是被重120克的手雷打偏到自己双膝。还恨当年他不把自己奸淫至死，好不再以此颜面示人。</p>
+<p>　　突然想起来了。之前所有的恨意都抛诸脑后一概不管。有时候就是这么奇怪。自己所坚持的博爱原则在刚才的自己身上荡然无存。唉当时想的什么？唔忘了。别想了。记忆就随它过去就好。起床。拔下充了一晚上电的假肢。不太熟练地塞到腿上。站起来走了几步，差点没一个趔趄摔下去。梳妆台几天没用了。几盒粉底就敞着在那儿。又骂了自己一句没收拾。向脸上扑了一下。没变质，还行。拿起眉笔准备勾。手抖画到了太阳穴上。笑着放回了化妆盒。从不太清晰的镜中仿佛看到了那个一直不会自己化妆的小女孩。用卸妆棉胡乱抹了几下，唉，只是普通棉布而已。热水半天打不燃。算了，冷水也成。今天不化妆吧。</p>
+<p>　　没穿喜爱的格子裙。今天不想一下子就被人认出。锁好家门——如果这是家的话。和住在302的莹静打了声招呼。顺着中街——说起来当时三次会议的时候还是自己提议要尽量按照旧时空的规划建成的——走向熟悉而又不熟悉的城铁三号线。位置出奇地和旧时空接近。铝合金的假肢尽量不撞出声音来。背着穿越以来从来没换过的书包，聚碳酸酯的纤维有些掉色。斜阳照着，斑驳的建筑墙面黯淡地闪着暖暖的光。人群熙攘，似乎从来没受过战争的影响——三年前这里还是敌占区呢。等了两班列车，终于缓缓开来了人略少的班次。付了3元，却发现塑胶座位上早已塞满了人。于是像来到这里以前的那个文静的女孩一样，下意识地走向后车厢的不太清晰的门旁，拉着横杆看景色慢慢被轨道扯向远方。大面积的通透玻璃设计确实下了本钱，斜射进车厢的落日被折射得像那年乌蒙山的晚霞……不小心碰到了坐在旁边座位上的一位老人，估计还是参加过抗清战争的老兵了。呆滞地沉默了几秒，才慌里慌张地像个犯错的孩子般弯下腰道歉。但老人并未出声，只是比自己还呆滞地望着。好像出了什么问题。再低头一望，原来自己的假肢——全世界唯一还在用的现代——哦是旧时空——的假肢——被慌乱地翻起了裤脚而露了出来，引来一阵侧目而视。仿佛还听见旁人低声议论说主席要去哪儿。不作声，捋了捋裤脚，顺便系好鞋带。紧张地捏着书包上的松紧带，从车窗的虚影中看到了羞涩的自己。放轻松放轻松。深吸了一口气。深邃地注视着远远的群山。看来还是藏不住自己。本来想像个普通人一样。也没能实现呢。</p>
+<p>　　到了所要盼着前往的站台。尽力不再让金属的碰撞发出声响。好笑，好像这样就能让旁人忘了自己是那个指挥过几十次师级会战的永远14岁女孩主席似的。不可能的。找回了当年的轻松与快乐。停顿了几秒寂静的时光。小跑着离开绿皮车厢。晚风吹得让人有些发冷。但心却悄悄地热起来了。</p>
+<p>　　眼前的旌屏山还是当年的模样。记忆力还是那样的清美。安龙战役中似乎没有任何一方试图攻占这里，也算是留了一份美好的回忆吧。它躺在被当年用几千吨炸药人工在黔桂群山中开辟的平原上，更是让自己怀念起不少美好时光来。顺着石阶攀上小山，长长的坡道洒满了阳光，随着云层的吹拂而在蒸腾的水汽中闪出梦幻的光。百来米的坡道两旁被满了深绿的草皮，时而杂着几株蒲公英。记得以前在第145阶旁边种了一株樱树，不出意料不见了。其实早就焉了。继续向山顶走去。这里不用顾忌他人认出自己的身份。开始还慢慢地散步，步伐逐渐加快，接着小跑了起来，最后就像55年那样在晚霞下向山顶星光璀璨处奔去。又回到了那无忧无虑的旧时光。用了三年多的铝合金假肢哐哐的响，但知道它不会散架。找回了青春年华。时而旋转着跳向下一阶，没有顾忌地蹦向曾在喜悦中度过的地方。</p>
+<p>　　是什么唤醒了沉睡的记忆？说不清。平台上的不锈钢栏杆仍然待在哪儿，只是也生起一层薄薄的锈迹。伫立在山门，哦不对，只是一张从旧时空带来的路牌刷了漆画上了标志，曾经平整的混凝土地面也已开裂。脚步放慢，不由自主地抬起手触摸着时光逝去的砖墙。尘土沾满了指尖，带来一丝旧日的气味。从山脚下引上来的电线急急地爬升，在一个笨重的变电器接入，又直直地拉了下来。以前这里是第二个家，旁边是广播站，现在已经迁到了安龙大学门口。二层小楼，有一些破旧，大概是旧时空90年代水准吧。空调外机耷拉在锈得缺掉了半边的内嵌式空调架上，满是灰尘。从包里掏出了一年多没用的钥匙，试探着插入钥匙孔内。果不其然打不开。再换一把，依旧。才发现是自己傻乎乎地搞反了，真得再骂一句制定保密标准的那群人，二类锁魔改成正反两边完全不一样，成功晋升为本时空最难破解锁具规范。都是在心里骂，毕竟赌气一会儿就消了。那些人也走得差不多了吧。</p>
+<p>　　屋内还很整洁。好像几天前有人打扫过。是谁呢？不想知道。电闸是关着的。拨开，迟滞了几分钟后灯才亮了起来。倒在客厅——至少用途差不多——的沙发上，看着天花板剥裂的腻子，又不想动了。就想呆呆地看着灰白的墙壁渐渐脱落，雨水冲刷会留下时光的脚步。然后是地基软化，支撑力不足，建筑体下陷，最后是轰的一声倒塌，再也无人记得自己的存在。恢复了些力气，翻过身来躺在沙发上，腿有一些沉重，即使材质是铝的也让自己没有膝盖的腿难以移动。其实是不知哪里冒出来的累的感觉。霞光落了下去，满城的灯火开始点亮。是第一个完成电气化的城市，建设者们却早已走了不知道多少。67年死了3个，9个在69年，13个死在人民路上，30多个战死……有些还是自己有意或无意害死的。怕。怕自己不再是那个温柔的孩子，变得像大人一样冷酷无情。战争还在继续。西安城的十几万冤魂。想要死去。</p>
+<p>　　最终还是不敢。是怕氯化钡剂量不够会恶心呕吐大半天吗？应该不是。振作起来啊。好讽刺。堂堂国家主席想自杀。好像也没什么不对的。放轻松。包放在旁边，拿起保温杯倒了瓶温水。那我一直以来想要追求的是什么？不清楚呢。就这样迷迷糊糊地活着，有人记得有人不记得，忙忙碌碌的人们忘却了一切自己的事，淹没在历史长河中。只有这带有一些浪漫色彩的安龙的漫天灯火，让宇宙记住了有人将那历史改变了模样。</p>
+<p>　　突然想起什么。原来自己把那年的衣服带来了。55年，或许是最开心的时光。淡蓝色的T-shirt，是拿校服改的，还能看到为了弥补多剪的一刀缝上的补丁。厚厚的格裙，大概能到膝盖的位置。还往包里塞了两本当年的日记。没心情看，因为回忆早就充盈着脑海了。朋友们，56年就各奔天涯，有些再也不知去向。大多数只在全体会议上能见一面。59年之后很多朋友就断了音信，论坛也不喳一声。天已经黑了，光污染还没旧时空那么严重，天河从窗中隐露一角。像星星，感觉很近很近，实际上穷尽一生也无法相遇。在安龙留守的几十个人要么是腿脚不便年事已高，要么是不想到处闯荡割据一方。何必相争呢。还记得和唐竺她们在乌蒙山玩的那段时光，尽管后来出现了鼠疫，但在夕阳里拥在一起的甜甜的笑真美。然后唐竺去了西藏，童心去了湖南，欧芸去了梧州，自己到了汉中。就这样充斥着无数的离别。几十年了，好多人也渐渐老去，自己的这幅孩子形象因为穿越的奇怪效应几乎没变。貌似遭到了很多人的嫉妒吧。看着朋友们一个个被皱纹爬上了额头，老去，卧床，死去，埋葬，总有一种愧疚。没和他们一样经历岁月的折磨，尽管并不是自己造成的。起身，到二楼，仰视星宇。有些已经看不清了。一颗一颗熄灭，自己和旁人的命运也许就是这样。到这里来，战天斗地，扭转乾坤，改写历史，创造奇迹，然后孤独离去。尽管差着好几个数量级。</p>
+<p>　　八月的安龙夜晚甚至有些微冷。关上二楼的门，发出吱呀的摩擦声。故意压轻脚步声，也许能让自己摆脱自责的纠缠。又幼稚了一回。再次倒在沙发上，向着杂乱地从书包中取出的整齐的衣服发呆。小孩子般地托住脑袋，下意识地无聊地数着右袖口有多少条纹路。数到56的时候突然一股强烈的冲动涌上心头。阳光。青春。承载着多少企盼呢。前线的唐竺还在延安筹划着渡过天险。等到结冰得到11月了吧。共和军的守备也不是几次攻势就能缴械的。何况失去了整个西北之后又加强了重点地区的驻军呢。</p>
+<p>　　也是爱着的人。夜幕已经降临了。她那里也在煤油灯下筹划着一次又一次的推论与驳斥吧。希望大家都平平安安的。哪天怨气渐渐消了，还可以聚在一起，欢欢乐乐像以前一样。怕是幻想吧。唉。还是拍一个电报给她吧。问一下近况如何。祝穿越26周年快乐。不要用军用频段。私人频段就行了。肯定会看到的。</p>
+<p>　　侧门第二个房间就是发报室。那年还在这里几个同学发着玩呢。摁下开关。熟悉的3个指示灯亮起。也不知是哪个天才搞出了集成电路+广播器的组合。反正还挺有用的。信息密度比传统电报不知高了多少，甚至还能发Unicode。曾经还试过发100kb的图片呢。思绪又不知飘到哪里去了。这玩意儿甚至带有屏幕。运行的还是魔改的Arch。写下几行不经思索的文字。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#Telegraph Type v3.1</span><br><span class="line">#PGP: 646da429ed14aa3e5dee237520b7e0096690bd8a</span><br><span class="line">#Customs &quot;Unicode, OpenPGP&quot;</span><br><span class="line"></span><br><span class="line">唐竺：</span><br><span class="line">26年了，你还好吗？</span><br><span class="line">记得保暖。陕北很冷的。注意安全。</span><br><span class="line">希望能平安度过冬天。我还在等着你呢。记得要回来。有重要的事情当面说。</span><br><span class="line">祝平安！</span><br><span class="line">你的，</span><br><span class="line">廷川</span><br><span class="line"></span><br><span class="line">#Meta &#123;Sendto: Tangtsu, Tangtsu@Gov.ncn&#125;</span><br><span class="line">#Autocompile</span><br></pre></td></tr></table></figure>
+<p>　　芯片其实早就老化了。也不敢用太久。广播器在响。说明她已经收到了。现在她该在忙吧。不想打搅她的工作。几个集团军。60万人。工农红军总司令。反正比我忙。长吁了一口气。不会打扰到她吧？不会，应该不会的。输入exit，再摁一下电源。事实上里边还会有更小的芯片在持续工作来接受信号。有点冷了。空调遥控器还放在盒子里。试着打开。能用，但半天没有感觉。开空调干嘛呢？还是开热档？搞不清自己在干什么。但至少舒心了。</p>
+<p>　　躺在沙发上。弹簧性能欠佳。不记得过去，也不记得将来。是什么推动着我前进呢？是那个至少此生无法实现的理想？还是想要别人尊待的优越感？说不清。也不是完人。也有自己的情感。侧过身。将手轻轻放在衣物上。感受到了当年的明媚阳光。那向晚的春风。忧伤。忽地就崩溃了。右眼的泪珠滴进左眼，再哗啦地打湿了布料。拿手拭去。通红。想要回到童年。想要和伙伴们再一次玩耍。是。我知道热力学第二定律。熵增是无可避免的。人人都将老去。可我不是没变吗。还能有着一丝希望的。毕竟这个世界是否遵守也说不定呢。翻起身坐了起来。想止住抽泣。但他人却一日不停地成长、衰老、死去。自己会有那一天吧。要珍惜当下的爱意。纸巾揉作一团，满载着温热的泪，画出了不太完美的抛物线。时光匆匆啊。旧时空的朋友四散而去，只有几个还能经常往来。至少我们见过了。</p>
+<p>　　努力让自己坚强起来。转身看着淡蓝色的梦想。有一种想要再次穿上的冲动。抱了起来，紧紧的贴在胸前。能感受到若有若无的温暖。脸也紧紧的贴了上去。不再涌出泪水。怕打湿回忆。放下，解开扣子。还是有些冷。那年的伤疤还在，有时还会疼。脱下卫衣。才记起旁边有更衣室。带着衣服走了进去。虽说这是个公用房屋，但只有自己在用。衣柜里还有几件厚厚的外套。几年没开了早就烂了。抱了出去扔在垃圾桶里。一周收一次。风打在裸露的肩膀上。发颤。把回忆举到胸前。镜中的自己并没有比当年高。只有氧化的边缘能够显出岁月的痕迹。大小仍然合适。短发披到了肩膀。暗棕色。米白发卡。一阵恍惚。坐到地上。也不管到底打扫干净了没。再也不复当年的天真可爱。金属色泽的假肢让自己回到了现实。套上希望。站起来走了一下。有那时的神色了。褪色的天蓝。失去的梦。褪下裤子。在假肢的脚踝卡了一下。去掉了遮掩的屏障，却有些舒畅了。这时候终于坦然接受了已没有双腿。热量在渐冷的空气中逝去。才发现自己发了这么久的呆。裙子有2厘米厚。也不知怎么搞成的像毛毯一样。蹲下，轻轻套上。不大不小。很熟悉的厚重感。升起了几团暖意。捋了下头发。完全符合梦中的那个女孩子。也不清楚是不是自己。</p>
+<p>　　推开大门。风声略大。径直向灯光密集处走去。远方南盘江水电站的落差创造了本时空最多的电力，燃起了满城繁星。要是备份没错的话，旧时空这里只是无人问津的小县城——的某个荒村。也算是某些超越旧时空的成就吧。停在栏杆边。俯视着明亮的建筑群。几十米高，还没有能超出这个高度的人造物——除了5年停战时期修的那些奇葩工事，混凝土堆到了几百米高。最后一班城铁从下方的轨道轻轻开过。今晚看不见月亮。但星空浩瀚。风声稍小。仍然拂起了发梢，在甜甜的空气中飘动。移开视线，眺望北方。云层涌动，明天或许要下雨。她在延安会看到怎样的情景呢。说不出的，是什么感觉？也许是。心疼。是爱。是想念。是倾诉。</p>
+<p>　　移回到身边。在甜蜜的空气中荡漾。是愧疚与深爱的心潮，也是相拥和托付的信任。她会理解吗？不是我要考虑的吧。曾经一心沉迷于政治，改革改革，毙掉投降派，公审目田人。却丝毫不知生活除了政治以外还有许许多多值得为之沉醉的事。人与人，家与家，爱情与友谊。是她。是她。是她让我懂得了生命的意义。与喜欢的人相伴一生，就是最好的经历。是的，我和许许多多的人一起建立了本时空第一个社会主义国家。但又如何呢？旧时空的经验已经告诉我们大洪水必将来临。是的，还有再浴火重生的可能。染上了几亿人的鲜血。何况时代惩罚如此之高呢。生产力太低，制度过高而被时代淹没，也不是少有的事。</p>
+<p>　　别想了别想了。与深爱着的人幸福地生活。是那最可贵的东西。再次从后方的群山中吹来了温暖的山风。裙摆舞动。是那久违的感觉。漫不经心地向远方伸出手臂。幼稚地数着北半球的星。那是天璇。和天枢一起连成一条直线。指尖跟着在天球上滑动。那就是她的方向。脑海中响起了不知哪里来的旋律。指尖跟着舞动。那是最美好的时光啊。想要倾尽一生被她爱着。也爱着她。是她在56年救下了绝望的我。是她给了我慰籍的拥抱。是她在法庭上大骂不公的判决。在我崩溃时她爱着我。</p>
+<p>　　也许是吧。又是一年8月13，今年是26周年了。</p>
+<p>　　退后几步。格纹飘起。希望与深爱此刻交织在一起。织起了身上的每一根纤维。抱住双肩。迎着风吹来的方向。腿不冷。早就截了嘛。脸朝着风来。发丝在舞动。在这黑夜中绽放的是朝霞。所有的记忆在这一刻爆发。紧紧地拥住自己。视线扭曲了起来。是泪吗？不清楚。思绪离开自己，愈离愈远，直到遥远的北方。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%A4%A7%E7%90%86%E5%85%B1%E5%92%8C%E5%9B%BD/">大理共和国</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Republic-of-Dali/">Republic of Dali</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%9F%AD%E7%AF%87/">短篇</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/11/08/Parties-of-Far-East-People-Republic/">
+                        <span class="hidden-mobile">远东人民共和国 Far East People's Republic 政党</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "4mca7CEPgz6yrSWtDdtrtPOF-MdYXbMMI",
+          app_key: "mqIcjRoqMGtQlXMkchTgnyr0",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: true,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c91ad77fb5072b82c30b4e1da77d4c3b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
